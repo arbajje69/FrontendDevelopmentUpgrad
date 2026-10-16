@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: 'Merriweather', Georgia, serif;
+        background-color: #b2c8b9;
+        color: #171b52;
+        /* font-family: Arial, sans-serif; */
+        text-align: center;
+        margin-top: 50px;
+      }
+      button {
+        /* font-family: Copperplate, Papyrus, fantasy; */
+        font-family: 'Courier New', monospace;
+        
+        color: rgb(3, 3, 3);
+        background-color: #e4bc54;
+        padding: 10px 20px;
+        border: 2px solid #171b52;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      h1 {
+        font-family: Copperplate, Papyrus, fantasy;
+        /* font-family: Copperplate, Luminari, fantasy; */
+        color: #171b52;
+      }
+      h5 {
+        /* font-family: Copperplate, Luminari, fantasy; */
+        /* font-family: Copperplate, Papyrus, fantasy; */
+        /* font-family: 'Brush Script MT', cursive; */
+        /* font-family: "Brush Script MT", cursive; */
+        font-family: "Courier New", Courier, monospace;
+        color: #39393c;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Find your Luck Percentage</h1>
+    <p>Click the button to generate a number between 1 and 100.
+        That tells you about your luck for the Tomorrow.
+    </p>
+    <h5>Best Wishes By Arbaj😊</h5>
+
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" placeholder="Your Name"> <br>
+    <button onclick="generateRandomNumber()">Generate Number</button> <br> <br>
+    <script>
+      function generateRandomNumber() {
+        var n = Math.random();
+        n = Math.floor(n * 100) + 1;
+        //alert("Your Luck Percentage for Tomorrow: " + n + "% ❤️");
+      }
+    </script>
+  </body>
+</html>

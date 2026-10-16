@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+ <script>
+    var counter = 0;
+    function incrementCounter() {
+        counter++;
+        document.getElementById("result").innerHTML = "Button clicked " + counter + " times";
+        if (counter > 10) {
+            alert("You have clicked the button 10 times!");
+            
+
+        }
+    } 
+     </script>
+<body>
+    
+    <label for="name">Click on this button to count:</label>
+    <button onclick="incrementCounter()">Click Me</button> <br> 
+    <label for="name">Counter Value:</label>
+    <p id="result">Button clicked 0 times</p>
+
+
+
+</body>
+</html>
